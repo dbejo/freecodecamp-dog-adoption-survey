@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <title>Dog Adoption Survey</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+    <h1 id="title" class="text-center">Dog Adoption Survey</h1>
+    <p id="description" class="text-center">If you would like to adopt a dog you should fill this form.</p>
+  </header>
+  <div class="container">
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+    </div>
+        <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+    <div class="form-group">
+        <label id="number-label" for="number"
+          >Age</label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+          required
+        />
+      </div>
+    <div class="form-group">
+      <p>Have you ever had a dog before?</p>
+      <label>
+        <input
+               name="question-own"
+               value="yes"
+               type="radio"
+               class="input-checkbox"
+               />Yes</label>
+      <label>
+        <input
+               name="question-own"
+               value="no"
+               type="radio"
+               class="input-checkbox"
+               />No</label>
+    </div>
+    <div class="form-group">
+      <p>Select the size of the wanted dog</p>
+      <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select size</option>
+          <option value="xs">Size XS</option>
+          <option value="s">Size S</option>
+          <option value="m">Size M</option>
+          <option value="l">Size L</option>
+          <option value="xl">Size XL</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <p>What can you provide for your choosen dog?</p>
+      <label>
+        <input
+               name="dog-place"
+               value="privatespace"
+               type="checkbox"
+               class="input-checkbox"
+               />Private space</label>
+      <label>
+        <input
+               name="dog-place"
+               value="garden"
+               type="checkbox"
+               class="input-checkbox"
+               />Garden</label>
+      <label>
+        <input
+               name="dog-place"
+               value="toys"
+               type="checkbox"
+               class="input-checkbox"
+               />Toys</label>
+    </div>
+    <div class="form-group">
+        <p>Let us know what type of dog you looking for</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Write here..."></textarea>
+      </div>
+    <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+  </form>
+  </div>
+  </body>
+  </html>
